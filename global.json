@@ -1,0 +1,1397 @@
+{
+  "Core": {
+    "Breakpoints": {
+      "mobile": {
+        "$type": "dimension",
+        "$value": "375px",
+        "$description": "Nivel 3 · Breakpoint Mobile · 375px · Dispositivos móviles estándar (iPhone SE+)"
+      },
+      "mobile-lg": {
+        "$type": "dimension",
+        "$value": "480px",
+        "$description": "Nivel 3 · Breakpoint Mobile Large · 480px · Móviles grandes"
+      },
+      "tablet": {
+        "$type": "dimension",
+        "$value": "768px",
+        "$description": "Nivel 3 · Breakpoint Tablet · 768px · iPad portrait, tablets"
+      },
+      "desktop": {
+        "$type": "dimension",
+        "$value": "1024px",
+        "$description": "Nivel 3 · Breakpoint Desktop · 1024px · Laptops y pantallas pequeñas"
+      },
+      "desktop-lg": {
+        "$type": "dimension",
+        "$value": "1280px",
+        "$description": "Nivel 3 · Breakpoint Desktop Large · 1280px · Pantallas estándar"
+      },
+      "wide": {
+        "$type": "dimension",
+        "$value": "1440px",
+        "$description": "Nivel 3 · Breakpoint Wide · 1440px · Pantallas grandes — Diseño de referencia principal"
+      },
+      "ultrawide": {
+        "$type": "dimension",
+        "$value": "1920px",
+        "$description": "Nivel 3 · Breakpoint Ultrawide · 1920px · Monitores grandes"
+      }
+    },
+    "Animation": {
+      "Duration": {
+        "instant": {
+          "$type": "dimension",
+          "$value": "0px",
+          "$description": "Nivel 3 · Duración 0ms · Sin animación (accesibilidad: prefers-reduced-motion)"
+        },
+        "fast": {
+          "$type": "dimension",
+          "$value": "100px",
+          "$description": "Nivel 3 · Duración 100ms · Micro-interacciones rápidas: hovers, focus rings"
+        },
+        "normal": {
+          "$type": "dimension",
+          "$value": "200px",
+          "$description": "Nivel 3 · Duración 200ms · Transiciones estándar: botones, toggles"
+        },
+        "slow": {
+          "$type": "dimension",
+          "$value": "300px",
+          "$description": "Nivel 3 · Duración 300ms · Transiciones de pantalla: modales, drawers"
+        },
+        "slower": {
+          "$type": "dimension",
+          "$value": "500px",
+          "$description": "Nivel 3 · Duración 500ms · Animaciones de contenido: reveals, fade-in"
+        },
+        "slowest": {
+          "$type": "dimension",
+          "$value": "700px",
+          "$description": "Nivel 3 · Duración 700ms · Animaciones hero, entrada de página"
+        }
+      },
+      "Easing": {
+        "linear": {
+          "$type": "string",
+          "$value": "linear",
+          "$description": "Nivel 3 · Curva lineal · Uso: progress bars, loaders continuos"
+        },
+        "standard": {
+          "$type": "string",
+          "$value": "cubic-bezier(0.4, 0.0, 0.2, 1)",
+          "$description": "Nivel 3 · Curva estándar (Material Design) · Uso: la mayoría de transiciones UI — Acelerada al inicio, desacelerada al final"
+        },
+        "decelerate": {
+          "$type": "string",
+          "$value": "cubic-bezier(0.0, 0.0, 0.2, 1)",
+          "$description": "Nivel 3 · Curva de desaceleración · Uso: elementos que entran a pantalla (slide-in, dropdowns)"
+        },
+        "accelerate": {
+          "$type": "string",
+          "$value": "cubic-bezier(0.4, 0.0, 1, 1)",
+          "$description": "Nivel 3 · Curva de aceleración · Uso: elementos que salen de pantalla (slide-out, dismiss)"
+        },
+        "spring": {
+          "$type": "string",
+          "$value": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+          "$description": "Nivel 3 · Curva spring con rebote · Uso: micro-interacciones expresivas, botones de acción flotante"
+        }
+      }
+    },
+    "Data": {
+      "name-A": {
+        "$type": "string",
+        "$value": "green"
+      },
+      "name-B": {
+        "$type": "string",
+        "$value": "navy"
+      },
+      "name-C": {
+        "$type": "string",
+        "$value": "lime"
+      },
+      "name-D": {
+        "$type": "string",
+        "$value": "teal"
+      }
+    },
+    "Spacing": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$description": "Primitiva · Espaciado 0px · Base 4px · Sin espaciado"
+      },
+      "1": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Primitiva · Espaciado 4px (1 × 4px) · Micro-espaciado"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Primitiva · Espaciado 8px (2 × 4px)"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Primitiva · Espaciado 12px (3 × 4px)"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Primitiva · Espaciado 16px (4 × 4px) · Espaciado base"
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$description": "Primitiva · Espaciado 20px (5 × 4px)"
+      },
+      "6": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "Primitiva · Espaciado 24px (6 × 4px)"
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$description": "Primitiva · Espaciado 32px (8 × 4px)"
+      },
+      "10": {
+        "$type": "dimension",
+        "$value": "40px",
+        "$description": "Primitiva · Espaciado 40px (10 × 4px)"
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "48px",
+        "$description": "Primitiva · Espaciado 48px (12 × 4px)"
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "64px",
+        "$description": "Primitiva · Espaciado 64px (16 × 4px) · Secciones"
+      },
+      "20": {
+        "$type": "dimension",
+        "$value": "80px",
+        "$description": "Primitiva · Espaciado 80px (20 × 4px)"
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": "96px",
+        "$description": "Primitiva · Espaciado 96px (24 × 4px)"
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": "128px",
+        "$description": "Primitiva · Espaciado 128px (32 × 4px) · Separación de secciones grandes"
+      },
+      "40": {
+        "$type": "dimension",
+        "$value": "160px",
+        "$description": "Primitiva · Espaciado 160px"
+      },
+      "48": {
+        "$type": "dimension",
+        "$value": "192px",
+        "$description": "Primitiva · Espaciado 192px"
+      },
+      "64": {
+        "$type": "dimension",
+        "$value": "256px",
+        "$description": "Primitiva · Espaciado 256px · Layout macro"
+      }
+    },
+    "Radius": {
+      "none": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$description": "Primitiva · Radio 0px · Elementos cuadrados"
+      },
+      "xs": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$description": "Primitiva · Radio 2px · Bordes casi cuadrados"
+      },
+      "sm": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Primitiva · Radio 4px · Inputs, chips"
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Primitiva · Radio 8px · Cards, botones"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Primitiva · Radio 12px · Paneles, modales"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Primitiva · Radio 16px · Cards destacadas"
+      },
+      "2xl": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$description": "Primitiva · Radio 24px · Hero cards"
+      },
+      "3xl": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$description": "Primitiva · Radio 32px · Elementos redondeados prominentes"
+      },
+      "full": {
+        "$type": "dimension",
+        "$value": "9999px",
+        "$description": "Primitiva · Radio total 9999px · Pills, avatares, toggles"
+      }
+    },
+    "Opacity": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0",
+        "$description": "Primitiva · Opacidad 0% · Invisible"
+      },
+      "5": {
+        "$type": "dimension",
+        "$value": "5",
+        "$description": "Primitiva · Opacidad 5% · Hover overlay sutil"
+      },
+      "10": {
+        "$type": "dimension",
+        "$value": "10",
+        "$description": "Primitiva · Opacidad 10% · Active overlay"
+      },
+      "20": {
+        "$type": "dimension",
+        "$value": "20",
+        "$description": "Primitiva · Opacidad 20%"
+      },
+      "25": {
+        "$type": "dimension",
+        "$value": "25",
+        "$description": "Primitiva · Opacidad 25%"
+      },
+      "30": {
+        "$type": "dimension",
+        "$value": "30",
+        "$description": "Primitiva · Opacidad 30%"
+      },
+      "40": {
+        "$type": "dimension",
+        "$value": "40",
+        "$description": "Primitiva · Opacidad 40%"
+      },
+      "50": {
+        "$type": "dimension",
+        "$value": "50",
+        "$description": "Primitiva · Opacidad 50% · Disabled overlay"
+      },
+      "60": {
+        "$type": "dimension",
+        "$value": "60",
+        "$description": "Primitiva · Opacidad 60%"
+      },
+      "70": {
+        "$type": "dimension",
+        "$value": "70",
+        "$description": "Primitiva · Opacidad 70%"
+      },
+      "75": {
+        "$type": "dimension",
+        "$value": "75",
+        "$description": "Primitiva · Opacidad 75%"
+      },
+      "80": {
+        "$type": "dimension",
+        "$value": "80",
+        "$description": "Primitiva · Opacidad 80%"
+      },
+      "90": {
+        "$type": "dimension",
+        "$value": "90",
+        "$description": "Primitiva · Opacidad 90%"
+      },
+      "95": {
+        "$type": "dimension",
+        "$value": "95",
+        "$description": "Primitiva · Opacidad 95%"
+      },
+      "100": {
+        "$type": "dimension",
+        "$value": "100",
+        "$description": "Primitiva · Opacidad 100% · Completamente visible"
+      }
+    },
+    "Elevation": {
+      "z-base": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$description": "Primitiva · Z-Index 0 · Nivel base"
+      },
+      "z-dropdown": {
+        "$type": "dimension",
+        "$value": "100px",
+        "$description": "Primitiva · Z-Index 100 · Dropdowns y menus"
+      },
+      "z-sticky": {
+        "$type": "dimension",
+        "$value": "200px",
+        "$description": "Primitiva · Z-Index 200 · Headers sticky, navbars"
+      },
+      "z-overlay": {
+        "$type": "dimension",
+        "$value": "300px",
+        "$description": "Primitiva · Z-Index 300 · Overlays de fondo"
+      },
+      "z-modal": {
+        "$type": "dimension",
+        "$value": "400px",
+        "$description": "Primitiva · Z-Index 400 · Modales y dialogs"
+      },
+      "z-toast": {
+        "$type": "dimension",
+        "$value": "500px",
+        "$description": "Primitiva · Z-Index 500 · Notificaciones toast"
+      },
+      "z-tooltip": {
+        "$type": "dimension",
+        "$value": "600px",
+        "$description": "Primitiva · Z-Index 600 · Tooltips y popovers · Máximo nivel"
+      }
+    },
+    "Color": {
+      "A": {
+        "0": {
+          "$type": "color",
+          "$value": "#f2fff4",
+          "$description": "Primitiva · Escala de color verde puro · Tono más claro"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#e5fde8",
+          "$description": "Primitiva · Verde muy claro · Fondos sutiles"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#c4facc",
+          "$description": "Primitiva · Verde claro · Fondos de estado éxito"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#91f78e",
+          "$description": "Primitiva · Verde brillante · PALETA BASE — Acento principal, rings de foco. Verificar contraste sobre fondos claros (mínimo 3:1 para UI)"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#63e86e",
+          "$description": "Primitiva · Verde vibrante · Hover states sobre fondos oscuros"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#3fcf52",
+          "$description": "Primitiva · Verde medio-claro"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#22ad38",
+          "$description": "Primitiva · Verde medio"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#148c27",
+          "$description": "Primitiva · Verde medio-oscuro"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#00731e",
+          "$description": "Primitiva · Verde profundo · PALETA BASE — Color de marca principal. Contraste AA sobre blanco (4.5:1+)"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#005715",
+          "$description": "Primitiva · Verde oscuro · Hover sobre elementos de marca"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#003a0d",
+          "$description": "Primitiva · Verde muy oscuro"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#001f07",
+          "$description": "Primitiva · Verde casi negro"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#000d03",
+          "$description": "Primitiva · Verde absoluto más oscuro"
+        }
+      },
+      "B": {
+        "0": {
+          "$type": "color",
+          "$value": "#f8ffe0",
+          "$description": "Primitiva · Escala lima/verde-amarillo · Tono más claro"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#f0fdca",
+          "$description": "Primitiva · Lima muy claro"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#e2f99e",
+          "$description": "Primitiva · Lima claro"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#ceee6c",
+          "$description": "Primitiva · Lima luminoso"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#b8e048",
+          "$description": "Primitiva · Lima medio-claro"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#96be36",
+          "$description": "Primitiva · Lima vibrante · PALETA BASE — Acento secundario sostenibilidad"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#7a9c28",
+          "$description": "Primitiva · Lima medio"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#549b35",
+          "$description": "Primitiva · Lima-verde · PALETA BASE — Verde bosque, texto sobre fondos claros"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#3d6e1e",
+          "$description": "Primitiva · Lima oscuro"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#284913",
+          "$description": "Primitiva · Lima muy oscuro"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#18290b",
+          "$description": "Primitiva · Lima profundo"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#0c1605",
+          "$description": "Primitiva · Lima casi negro"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#060a02",
+          "$description": "Primitiva · Lima absoluto más oscuro"
+        }
+      },
+      "C": {
+        "0": {
+          "$type": "color",
+          "$value": "#f0fffe",
+          "$description": "Primitiva · Escala teal/cian · Tono más claro"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#e3fdfb",
+          "$description": "Primitiva · Teal muy claro"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#c4f9f3",
+          "$description": "Primitiva · Teal claro"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#92f5e8",
+          "$description": "Primitiva · Teal luminoso"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#77f6e6",
+          "$description": "Primitiva · Teal brillante · PALETA BASE — Acento cian, evoca energía limpia y agua"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#3fd9cb",
+          "$description": "Primitiva · Teal medio-claro"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#1bbdb0",
+          "$description": "Primitiva · Teal medio"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#10968a",
+          "$description": "Primitiva · Teal medio-oscuro"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#0a7068",
+          "$description": "Primitiva · Teal oscuro"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#075048",
+          "$description": "Primitiva · Teal muy oscuro"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#03302b",
+          "$description": "Primitiva · Teal profundo"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#011917",
+          "$description": "Primitiva · Teal casi negro"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#000d0b",
+          "$description": "Primitiva · Teal absoluto más oscuro"
+        }
+      },
+      "D": {
+        "0": {
+          "$type": "color",
+          "$value": "#eef1fa",
+          "$description": "Primitiva · Escala navy/azul oscuro · Tono más claro"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#d9e0f2",
+          "$description": "Primitiva · Navy muy claro"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#b3bfe4",
+          "$description": "Primitiva · Navy claro"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#8b9cd0",
+          "$description": "Primitiva · Navy luminoso"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#667cb8",
+          "$description": "Primitiva · Navy medio-claro"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#475d9c",
+          "$description": "Primitiva · Navy medio"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#2f4280",
+          "$description": "Primitiva · Navy medio-oscuro"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#222f5b",
+          "$description": "Primitiva · Navy oscuro · PALETA BASE — Azul marino medio, fondos oscuros secundarios"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#15234f",
+          "$description": "Primitiva · Navy profundo · PALETA BASE — Texto sobre fondos claros (AAA)"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#0a1945",
+          "$description": "Primitiva · Navy muy profundo · PALETA BASE — Fondos de secciones oscuras"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#0b1a2e",
+          "$description": "Primitiva · Navy casi negro · PALETA BASE — Texto principal máximo contraste (AAA)"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#060d1a",
+          "$description": "Primitiva · Navy oscurísimo"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#020509",
+          "$description": "Primitiva · Navy absoluto más oscuro"
+        }
+      },
+      "Neutral": {
+        "0": {
+          "$type": "color",
+          "$value": "#ffffff",
+          "$description": "Primitiva · Blanco puro · Fondo principal del modo Light"
+        },
+        "25": {
+          "$type": "color",
+          "$value": "#fdfcfc",
+          "$description": "Primitiva · Blanco cálido casi imperceptible"
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#faf9f9",
+          "$description": "Primitiva · PALETA BASE — Neutro muy claro cálido, fondos de secciones alternadas"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#f5f3f3",
+          "$description": "Primitiva · PALETA BASE — Gris muy claro cálido, fondos de cards y paneles"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#eae8e8",
+          "$description": "Primitiva · Gris claro · Bordes sutiles"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#d5d1d1",
+          "$description": "Primitiva · Gris medio-claro · Bordes por defecto"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#b8b3b3",
+          "$description": "Primitiva · Gris medio · Placeholder e inputs deshabilitados"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#958f8f",
+          "$description": "Primitiva · Gris medio-oscuro · Texto auxiliar"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#706a6a",
+          "$description": "Primitiva · Gris oscuro · Texto terciario"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#4f4a4a",
+          "$description": "Primitiva · Gris muy oscuro · Texto secundario"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#333030",
+          "$description": "Primitiva · Casi negro cálido"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#1e1b1b",
+          "$description": "Primitiva · Gris oscurísimo"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#120f0f",
+          "$description": "Primitiva · Casi negro"
+        },
+        "1000": {
+          "$type": "color",
+          "$value": "#080606",
+          "$description": "Primitiva · Negro cálido absoluto"
+        }
+      },
+      "Error": {
+        "50": {
+          "$type": "color",
+          "$value": "#fef2f2",
+          "$description": "Primitiva · Error muy claro · Fondos de alertas de error"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#fee2e2",
+          "$description": "Primitiva · Error claro"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#fecaca",
+          "$description": "Primitiva · Error luminoso"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#fca5a5",
+          "$description": "Primitiva · Error medio-claro"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#f87171",
+          "$description": "Primitiva · Error medio"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#ef4444",
+          "$description": "Primitiva · Error base · Color de sistema para estados de error"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#dc2626",
+          "$description": "Primitiva · Error oscuro · Texto de error sobre fondos claros (WCAG AA)"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#b91c1c",
+          "$description": "Primitiva · Error profundo"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#991b1b",
+          "$description": "Primitiva · Error muy oscuro"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#7f1d1d",
+          "$description": "Primitiva · Error casi negro"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#450a0a",
+          "$description": "Primitiva · Error oscurísimo"
+        }
+      },
+      "Success": {
+        "50": {
+          "$type": "color",
+          "$value": "#f0fdf4",
+          "$description": "Primitiva · Éxito muy claro · Fondos de alertas de éxito"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#dcfce7",
+          "$description": "Primitiva · Éxito claro"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#bbf7d0",
+          "$description": "Primitiva · Éxito luminoso"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#86efac",
+          "$description": "Primitiva · Éxito medio-claro"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#4ade80",
+          "$description": "Primitiva · Éxito medio"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#22c55e",
+          "$description": "Primitiva · Éxito base"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#16a34a",
+          "$description": "Primitiva · Éxito oscuro · Texto sobre fondos claros (WCAG AA)"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#15803d",
+          "$description": "Primitiva · Éxito profundo"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#166534",
+          "$description": "Primitiva · Éxito muy oscuro"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#14532d",
+          "$description": "Primitiva · Éxito casi negro"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#052e16",
+          "$description": "Primitiva · Éxito oscurísimo"
+        }
+      },
+      "Warning": {
+        "50": {
+          "$type": "color",
+          "$value": "#fffbeb",
+          "$description": "Primitiva · Advertencia muy claro · Fondos de alertas"
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#fef3c7",
+          "$description": "Primitiva · Advertencia claro"
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#fde68a",
+          "$description": "Primitiva · Advertencia luminoso"
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#fcd34d",
+          "$description": "Primitiva · Advertencia medio-claro"
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#fbbf24",
+          "$description": "Primitiva · Advertencia medio"
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#f59e0b",
+          "$description": "Primitiva · Advertencia base"
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#d97706",
+          "$description": "Primitiva · Advertencia oscuro · Texto sobre fondos claros"
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#b45309",
+          "$description": "Primitiva · Advertencia profundo"
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#92400e",
+          "$description": "Primitiva · Advertencia muy oscuro"
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#78350f",
+          "$description": "Primitiva · Advertencia casi negro"
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#451a03",
+          "$description": "Primitiva · Advertencia oscurísimo"
+        }
+      }
+    },
+    "Typography": {
+      "FontSize": {
+        "2xs": {
+          "$type": "dimension",
+          "$value": "10px",
+          "$description": "Primitiva · Tamaño de fuente 2xs · Escala Major Third (ratio 1.25) sobre base 16px · Uso: etiquetas pequeñas, badges"
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": "13px",
+          "$description": "Primitiva · Tamaño de fuente xs · Escala Major Third · Uso: metadatos, captions"
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "14px",
+          "$description": "Primitiva · Tamaño de fuente pequeño · Uso: texto de apoyo, notas al pie"
+        },
+        "base": {
+          "$type": "dimension",
+          "$value": "16px",
+          "$description": "Primitiva · Tamaño base = 16px · BASE de la escala Major Third · Uso: cuerpo de texto principal"
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "20px",
+          "$description": "Primitiva · base * 1.25^1 = 20px · Uso: párrafos grandes, intro text"
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "25px",
+          "$description": "Primitiva · base * 1.25^2 = 25px · Uso: subheadings, títulos de card"
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "31px",
+          "$description": "Primitiva · base * 1.25^3 = 31.25px · Uso: heading nivel 3"
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "39px",
+          "$description": "Primitiva · base * 1.25^4 = 39px · Uso: heading nivel 2"
+        },
+        "3xl": {
+          "$type": "dimension",
+          "$value": "49px",
+          "$description": "Primitiva · base * 1.25^5 = 48.8px · Uso: heading nivel 1"
+        },
+        "4xl": {
+          "$type": "dimension",
+          "$value": "61px",
+          "$description": "Primitiva · base * 1.25^6 = 61px · Uso: hero title"
+        },
+        "5xl": {
+          "$type": "dimension",
+          "$value": "76px",
+          "$description": "Primitiva · base * 1.25^7 = 76.3px · Uso: display / super hero"
+        }
+      },
+      "LineHeight": {
+        "tight": {
+          "$type": "dimension",
+          "$value": "1.1px",
+          "$description": "Primitiva · Interlineado ajustado · Uso: headings grandes, display"
+        },
+        "snug": {
+          "$type": "dimension",
+          "$value": "1.25px",
+          "$description": "Primitiva · Interlineado compacto · Uso: subtitulos"
+        },
+        "normal": {
+          "$type": "dimension",
+          "$value": "1.5px",
+          "$description": "Primitiva · Interlineado normal · Uso: cuerpo de texto, párrafos"
+        },
+        "relaxed": {
+          "$type": "dimension",
+          "$value": "1.63px",
+          "$description": "Primitiva · Interlineado relajado · Uso: contenido editorial largo"
+        },
+        "loose": {
+          "$type": "dimension",
+          "$value": "2px",
+          "$description": "Primitiva · Interlineado amplio · Uso: accesibilidad, lectura asistida"
+        }
+      },
+      "FontFamily": {
+        "primary": {
+          "$type": "string",
+          "$value": "Inter"
+        },
+        "secondary": {
+          "$type": "string",
+          "$value": "Inter"
+        },
+        "number": {
+          "$type": "string",
+          "$value": "Inter"
+        }
+      },
+      "LetterSpacing": {
+        "tight": {
+          "$type": "dimension",
+          "$value": "-0.02px",
+          "$description": "Primitiva · Tracking ajustado (-0.02em) · Uso: títulos grandes"
+        },
+        "normal": {
+          "$type": "dimension",
+          "$value": "0px",
+          "$description": "Primitiva · Tracking normal (0em) · Uso: cuerpo de texto"
+        },
+        "wide": {
+          "$type": "dimension",
+          "$value": "0.03px",
+          "$description": "Primitiva · Tracking amplio (0.025em) · Uso: subheadings"
+        },
+        "wider": {
+          "$type": "dimension",
+          "$value": "0.05px",
+          "$description": "Primitiva · Tracking más amplio (0.05em) · Uso: labels, botones"
+        },
+        "widest": {
+          "$type": "dimension",
+          "$value": "0.1px",
+          "$description": "Primitiva · Tracking máximo (0.1em) · Uso: caps, overlines"
+        }
+      },
+      "FontWeight": {
+        "light": {
+          "$type": "dimension",
+          "$value": "300",
+          "$description": "Primitiva · Peso de fuente Light (300)"
+        },
+        "regular": {
+          "$type": "dimension",
+          "$value": "400",
+          "$description": "Primitiva · Peso de fuente Regular (400) · Cuerpo de texto"
+        },
+        "medium": {
+          "$type": "dimension",
+          "$value": "500",
+          "$description": "Primitiva · Peso de fuente Medium (500)"
+        },
+        "semibold": {
+          "$type": "dimension",
+          "$value": "600",
+          "$description": "Primitiva · Peso de fuente SemiBold (600) · Subheadings, labels"
+        },
+        "bold": {
+          "$type": "dimension",
+          "$value": "700",
+          "$description": "Primitiva · Peso de fuente Bold (700) · Headings, énfasis"
+        },
+        "extrabold": {
+          "$type": "dimension",
+          "$value": "800",
+          "$description": "Primitiva · Peso de fuente ExtraBold (800) · Display, hero"
+        }
+      }
+    }
+  },
+  "Semantic": {
+    "Brand": {
+      "primary": {
+        "$type": "color",
+        "$value": "{Core.Color.D.600}"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{Core.Color.A.600}"
+      },
+      "secondary-start": {
+        "$type": "color",
+        "$value": "{Core.Color.A.600}"
+      },
+      "secondary-end": {
+        "$type": "color",
+        "$value": "{Core.Color.B.400}"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{Core.Color.C.800}"
+      }
+    },
+    "Surface": {
+      "primary": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.0}",
+        "$description": "Semántica · Superficie principal · Blanco · Scope: fondo de página y layout principal"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.50}",
+        "$description": "Semántica · Superficie secundaria · FAF9F9 cálido · Scope: secciones alternadas"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.100}",
+        "$description": "Semántica · Superficie terciaria · F5F3F3 · Scope: cards, sidebars, paneles"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{Core.Color.D.900}",
+        "$description": "Semántica · Superficie inversa · Navy/900 #0B1A2E · Scope: hero sections oscuras, nav, footers de impacto"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Semántica · Superficie de marca · Verde #00731E · Scope: SOLO botones CTA primarios y banners H2V+"
+      },
+      "brand-subtle": {
+        "$type": "color",
+        "$value": "{Core.Color.A.50}",
+        "$description": "Semántica · Superficie de marca sutil · Verde muy claro · Scope: badges, chips, tags"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{Core.Color.C.400}",
+        "$description": "Semántica · Superficie de acento · Teal #77F6E6 · Scope: highlights, callouts de energía limpia"
+      },
+      "accent-subtle": {
+        "$type": "color",
+        "$value": "{Core.Color.C.50}",
+        "$description": "Semántica · Superficie de acento sutil · Teal/50 · Scope: fondos de features de innovación"
+      },
+      "status-error": {
+        "$type": "color",
+        "$value": "{Core.Color.Error.50}",
+        "$description": "Semántica · Error · Error/50 · Scope: fondo de alertas de error"
+      },
+      "status-success": {
+        "$type": "color",
+        "$value": "{Core.Color.Success.50}",
+        "$description": "Semántica · Éxito · Success/50 · Scope: fondo de confirmaciones"
+      },
+      "status-warning": {
+        "$type": "color",
+        "$value": "{Core.Color.Warning.50}",
+        "$description": "Semántica · Advertencia · Warning/50 · Scope: fondo de alertas informativas"
+      },
+      "bg-home": {
+        "$type": "color",
+        "$value": "{Semantic.Surface.primary}"
+      },
+      "bg-body-default": {
+        "$type": "color",
+        "$value": "{Semantic.Surface.secondary}"
+      }
+    },
+    "Text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{Core.Color.D.900}",
+        "$description": "Semántica · Texto principal · Navy/900 · Contraste: 18.1:1 sobre blanco (WCAG AAA) · Scope: párrafos, cuerpo"
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{Core.Color.D.700}",
+        "$description": "Semántica · Texto secundario · Navy/700 · Contraste: ~12:1 (WCAG AAA) · Scope: subtítulos, metadatos"
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.600}",
+        "$description": "Semántica · Texto terciario · Neutral/600 · Contraste: ~5.9:1 (WCAG AA) · Scope: fechas, texto auxiliar"
+      },
+      "placeholder": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.400}",
+        "$description": "Semántica · Placeholder · Neutral/400 · Scope: SOLO placeholders de inputs"
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.300}",
+        "$description": "Semántica · Texto deshabilitado · Neutral/300 · Scope: SOLO estado disabled"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.0}",
+        "$description": "Semántica · Texto inverso · Blanco · Contraste sobre Navy/900: 18.1:1 (AAA) · Scope: textos en Surface/inverse"
+      },
+      "inverse-gray": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.200}",
+        "$description": "Semántica · Texto inverso · Blanco · Contraste sobre Navy/900: 18.1:1 (AAA) · Scope: textos en Surface/inverse"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Semántica · Texto de marca · Verde #00731E · Contraste: 6.1:1 (WCAG AA) · Scope: énfasis H2V+"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{Core.Color.C.700}",
+        "$description": "Semántica · Texto de acento · Teal/700 #0A7068 · CORREGIDO: Contraste ~5.1:1 sobre blanco (WCAG AA 4.5:1 ✓) · Scope: datos de impacto, métricas H2V+"
+      },
+      "accent-on-inverse": {
+        "$type": "color",
+        "$value": "{Core.Color.C.300}",
+        "$description": "Semántica · Borde de acento · Teal/300 · Scope: callouts especiales"
+      },
+      "link": {
+        "$type": "color",
+        "$value": "{Core.Color.D.600}",
+        "$description": "Semántica · Enlace · Navy/600 · Contraste AA · Scope: links en cuerpo de texto"
+      },
+      "link-hover": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Semántica · Enlace hover · Verde marca · Scope: estado hover/active de links"
+      },
+      "status-error": {
+        "$type": "color",
+        "$value": "{Core.Color.Error.600}",
+        "$description": "Semántica · Error · Error/600 · Contraste AA · Scope: mensajes de validación"
+      },
+      "status-success": {
+        "$type": "color",
+        "$value": "{Core.Color.Success.700}",
+        "$description": "Semántica · Éxito · Success/700 · Contraste AA · Scope: confirmaciones"
+      },
+      "status-warning": {
+        "$type": "color",
+        "$value": "{Core.Color.Warning.700}",
+        "$description": "Semántica · Advertencia · Warning/700 · Contraste AA · Scope: alertas"
+      }
+    },
+    "Border": {
+      "accent": {
+        "$type": "color",
+        "$value": "{Core.Color.C.700}",
+        "$description": "Semántica · Texto de acento · Teal/700 #0A7068 · CORREGIDO: Contraste ~5.1:1 sobre blanco (WCAG AA 4.5:1 ✓) · Scope: datos de impacto, métricas H2V+"
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.200}",
+        "$description": "Semántica · Borde sutil · Neutral/200 · Scope: divisores, separadores de sección"
+      },
+      "default": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.300}",
+        "$description": "Semántica · Borde estándar · Neutral/300 · Scope: inputs, cards, tablas"
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.500}",
+        "$description": "Semántica · Borde fuerte · Neutral/500 · Scope: mayor definición visual"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.0}",
+        "$description": "Semántica · Borde inverso · Blanco · Scope: bordes en superficie oscura"
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Semántica · Borde de marca · Verde · Scope: inputs activos, tabs seleccionados"
+      },
+      "accent-on-inverse": {
+        "$type": "color",
+        "$value": "{Core.Color.C.300}",
+        "$description": "Semántica · Borde de acento · Teal/300 · Scope: callouts especiales"
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Semántica · Focus ring · Green/700 #00731E · ACCESIBILIDAD CORREGIDA: Contraste 6.1:1 sobre blanco (WCAG AA Normal 4.5:1 ✓ y AA Non-text 3:1 ✓) · Scope: TODOS los elementos focusables del sitio"
+      },
+      "status-error": {
+        "$type": "color",
+        "$value": "{Core.Color.Error.500}",
+        "$description": "Semántica · Borde error · Error/500 · Scope: inputs con error"
+      },
+      "status-success": {
+        "$type": "color",
+        "$value": "{Core.Color.Success.500}",
+        "$description": "Semántica · Borde éxito · Success/500 · Scope: inputs válidos"
+      }
+    },
+    "Interactive": {
+      "primary-bg": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Semántica · CTA Primario · Fondo · Verde #00731E · Contraste texto blanco: 6.1:1 (AA)"
+      },
+      "primary-bg-hover": {
+        "$type": "color",
+        "$value": "{Core.Color.A.800}",
+        "$description": "Semántica · CTA Primario Hover · Verde oscuro #005715"
+      },
+      "primary-bg-active": {
+        "$type": "color",
+        "$value": "{Core.Color.A.900}",
+        "$description": "Semántica · CTA Primario Active · Verde muy oscuro"
+      },
+      "primary-text": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.0}",
+        "$description": "Semántica · CTA Primario · Texto · Blanco · Contraste: 6.1:1 (AA)"
+      },
+      "secondary-bg": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.0}",
+        "$description": "Semántica · CTA Secundario · Fondo · Blanco · Scope: botones outlined"
+      },
+      "secondary-bg-hover": {
+        "$type": "color",
+        "$value": "{Core.Color.A.50}",
+        "$description": "Semántica · CTA Secundario Hover · Green/50"
+      },
+      "secondary-border": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Semántica · CTA Secundario · Borde · Verde marca"
+      },
+      "secondary-text": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Semántica · CTA Secundario · Texto · Verde · Contraste: 6.1:1 (AA)"
+      },
+      "ghost-bg-hover": {
+        "$type": "color",
+        "$value": "{Core.Color.A.50}",
+        "$description": "Semántica · Ghost Hover · Green/50 · Scope: botones ghost/text"
+      },
+      "ghost-text": {
+        "$type": "color",
+        "$value": "{Core.Color.D.700}",
+        "$description": "Semántica · Ghost · Texto · Navy/700 · Contraste AA"
+      }
+    }
+  },
+  "State": {
+    "Default": {
+      "bg": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.0}",
+        "$description": "Estado Global · Default · Fondo · Tipo: Estado · Scope: Fondo base de todos los elementos interactivos en reposo"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.300}",
+        "$description": "Estado Global · Default · Borde · Neutral/300 · Tipo: Estado · Scope: Borde base transversal"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{Core.Color.D.900}",
+        "$description": "Estado Global · Default · Texto · Navy/900 · Tipo: Estado"
+      }
+    },
+    "Hover": {
+      "bg": {
+        "$type": "color",
+        "$value": "{Core.Color.A.50}",
+        "$description": "Estado Global · Hover · Fondo · Green/50 · Tipo: Estado · EFICIENCIA: Variable transversal para todos los hovers"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Estado Global · Hover · Borde · Green/700 · Tipo: Estado"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{Core.Color.A.800}",
+        "$description": "Estado Global · Hover · Texto · Green/800 · Tipo: Estado"
+      }
+    },
+    "Active": {
+      "bg": {
+        "$type": "color",
+        "$value": "{Core.Color.A.100}",
+        "$description": "Estado Global · Active/Pressed · Fondo · Green/100 · Tipo: Estado · Scope: estado presionado transversal"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Estado Global · Active · Borde · Green/700 · Tipo: Estado"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{Core.Color.A.900}",
+        "$description": "Estado Global · Active · Texto · Green/900 · Tipo: Estado"
+      }
+    },
+    "Focus": {
+      "ring": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Estado Global · Focus · Anillo · Green/700 #00731E · WCAG AA: 6.1:1 sobre blanco ✓ · Scope: TODOS los elementos focusables"
+      },
+      "ring-offset": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.0}",
+        "$description": "Estado Global · Focus · Ring Offset · Blanco · Tipo: Estado · Separación visual entre elemento y focus ring"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{Core.Color.A.700}",
+        "$description": "Estado Global · Focus · Borde · Green/700 · Tipo: Estado"
+      }
+    },
+    "Disabled": {
+      "bg": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.100}",
+        "$description": "Estado Global · Disabled · Fondo · Neutral/100 · Tipo: Estado · Scope: TODOS los elementos deshabilitados"
+      },
+      "border": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.200}",
+        "$description": "Estado Global · Disabled · Borde · Neutral/200 · Tipo: Estado"
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{Core.Color.Neutral.400}",
+        "$description": "Estado Global · Disabled · Texto · Neutral/400 · Tipo: Estado"
+      }
+    }
+  }
+}
